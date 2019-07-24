@@ -1,150 +1,130 @@
 @import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
-
-:root {
-   font-family: "Lato", sans-serif;
-    scroll-behavior: smooth;
+* {
+    box-sizing: border-box;
 }
 
-body {
-max-width: 1200px;
-margin: auto;
-font-family: "Lato", sans-serif;
-font-size: 14px;
-font-weight: 300;
-line-height: 1.625em;
+html, body {
+    max-width: 980px;
+    margin: auto;
+    padding: 0;
+    font-family: "Lato", sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.625em;
 }
 
-.primary-navigation {
-display: flex;
-flex-direction: row;
-list-style-type: none;
-justify-content: space-between;
-align-items: flex-start;
-align-content: stretch;
-flex-wrap: wrap;
-flex-grow: 1;
-flex-shrink: 1;
-padding: 0;
-position: fixed;
-left: 0;
-right: 0;
-top: 0;
+.mh-logo {
+    margin: 0;
 }
 
-header .logo {
-margin: 0;
-padding: 0;
-width: auto;
-height: auto;
+.main-nav a {
+    font-size: 0.75em;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #343534;
+    text-decoration: none;
 }
 
-header .logo-pic {
-height: 60px;
-width: auto;
+.main-nav ul {
+    margin: 0;
+    padding: 0;
+}
+.logo-pic img {
+    max-width: 100%;
+    height: auto;
 }
 
-header .main-nav {
-display: flex;
-flex-direction: row;
-list-style-type: none;
-justify-content: space-between;
-align-items: flex-start;
-align-content: stretch;
-flex-wrap: wrap;
-flex-grow: 1;
-flex-shrink: 1;
-padding: 0;
-
-}
-header .menu {
-display: flex;
-list-style-type: none;
-justify-content: space-around;
-padding: 0;
-width: 100%;
+.container {
+    max-width: 100%;
+    padding: 20px;
+    margin: 0 auto;
 }
 
-ul.menu {
-margin: 0;
-padding: 0;
+.main-header .container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
-li.menu {
-text-align: left;
+.main-nav ul {
+    margin: 1em 0 .5em;
+    text-align: center;
 }
 
-header .menu a {
-text-transform: uppercase;
-text-decoration: none;
-padding: 5px;
-color:#2B2929;
-font-size: 16px;
+.main-nav li {
+    display: inline;
 }
 
-header .menu a:hover {
-text-decoration: underline;
-color: #090909;
+.main-nav a {
+    display: inline-block;
+    padding: .5em 1.5em;
+}
+
+@media (min-width:960px) {
+    .main-header .container {
+        justify-content: space-between;
+    }
 }
 
 header form {
-width: auto;
-float: right;
+    width: auto;
+    float: right;
 }
 
 #search input[type="text"] {
-background: url(../img/search-dark.png) no-repeat 10px 6px ;
-background-color: #D5D4D4 ;
-opacity: 0.75;
-border: 2px solid #737070;
-color:#141313;
-width: 180px;
-padding: 6px 0px 6px 30px;
-border-radius: 20px;
+    background: url(../img/search-dark.png) no-repeat 10px 6px;
+    background-color: #D5D4D4;
+    opacity: 0.75;
+    border: 2px solid #737070;
+    color: #141313;
+    width: 180px;
+    padding: 6px 0px 6px 30px;
+    border-radius: 20px;
 }
 
 #search input[type="text"]:focus {
-width: 250px;
+    width: 250px;
 }
 
-
 header .banner {
-width: 100%;
-min-height: 500px;
-background-image: url(../img/title.jpg);
-background-size: cover;
-background-position: center;
-display: flex;
-align-items: center;
-justify-content: center;
-flex-direction: column;
-margin: 0;
-padding: 0;
+    width: 100%;
+    min-height: 500px;
+    background-image: url(../img/title.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
 }
 
 .main-button {
-display: inline-block;
-padding: 0.35em 1.2em;
-border: 0.2em solid #837C7C;
-margin: 0 ;
-border-radius: 0.5em;
-box-sizing: border-box;
-text-decoration: none;
-font-weight: 300;
-color: #2B2929;
-text-align: center;
-background-color: #D5D4D4 ;
-opacity: 0.75;
+    display: inline-block;
+    padding: 0.35em 1.2em;
+    border: 0.2em solid #837C7C;
+    margin: 0;
+    border-radius: 0.5em;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-weight: 300;
+    color: #2B2929;
+    text-align: center;
+    background-color: #D5D4D4;
+    opacity: 0.75;
 }
+
 .main-button a {
-text-transform: uppercase;
-text-decoration: none;
-padding: 5px;
-color:#2B2929;
-font-size: 14px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 5px;
+    color: #2B2929;
+    font-size: 14px;
 }
 
 .main-button a:hover {
-text-decoration: underline;
+    text-decoration: underline;
 }
-
-
