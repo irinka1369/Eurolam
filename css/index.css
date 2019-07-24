@@ -183,6 +183,7 @@ header .banner {
 
 .butt {
     padding: 8px 15px 6px;
+    margin:
     font-size: .7em;
     letter-spacing: 0.1em;
     font-weight: bold;
@@ -217,9 +218,8 @@ header .banner {
 }
 
 .flex .col .butt {
-    align-self: flex-start;
+    align-self: center;
     margin-top: auto;
-}
 
 @media (max-width: 900px) {
     .flex {
