@@ -32,6 +32,11 @@ body {
     text-decoration: none;
 }
 
+.main-nav a:hover {
+text-decoration: underline;
+}
+
+
 .main-nav ul {
     margin: 0;
     padding: 0;
@@ -143,6 +148,16 @@ header .banner {
     margin-top: 2em;
 }
 
+.novosti-h2 {
+    text-align: center;
+    margin: 5
+}
+
+.video-h2 {
+    text-align: center;
+    margin: 5
+}
+
 .col {
     padding-bottom: 5px;
     color: #424346;
@@ -152,16 +167,18 @@ header .banner {
 
 .col h2, .col p {
     margin: 0;
-    padding: 0 ;
+    padding: 0;
 }
 
 .col h2 {
     margin: .75em 0 .5em;
+    text-align: center;
 }
 
 .col p {
-     text-align: left;
+    text-align: justify;
     font-size: 0.9em;
+    padding: 0 5px;
 }
 
 .butt {
@@ -182,6 +199,8 @@ header .banner {
     height: auto;
 }
 
+.flex iframe {}
+
 .flex {
     display: flex;
     flex-direction: row;
@@ -194,7 +213,7 @@ header .banner {
     display: flex;
     flex-direction: column;
     flex: 0 1 300px;
-    margin: 1em 0.5em;
+    margin: 1em 1em;
 }
 
 .flex .col .butt {
