@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
 
 :root {
-    --main-color: black;
    font-family: "Lato", sans-serif;
     scroll-behavior: smooth;
 }
@@ -35,18 +34,26 @@ top: 0;
 header .logo {
 margin: 0;
 padding: 0;
+width: auto;
+height: auto;
 }
 
 header .logo-pic {
 height: 60px;
+width: auto;
 }
 
 header .main-nav {
 display: flex;
+flex-direction: row;
 list-style-type: none;
-justify-content: space-around;
-align-items: center;
-align-content: center;
+justify-content: space-between;
+align-items: flex-start;
+align-content: stretch;
+flex-wrap: wrap;
+flex-grow: 1;
+flex-shrink: 1;
+padding: 0;
 
 }
 header .menu {
@@ -54,11 +61,16 @@ display: flex;
 list-style-type: none;
 justify-content: space-around;
 padding: 0;
+width: 100%;
 }
 
 ul.menu {
 margin: 0;
 padding: 0;
+}
+
+li.menu {
+text-align: left;
 }
 
 header .menu a {
@@ -134,3 +146,5 @@ font-size: 14px;
 .main-button a:hover {
 text-decoration: underline;
 }
+
+
