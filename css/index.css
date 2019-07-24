@@ -13,6 +13,12 @@ html, body {
     line-height: 1.625em;
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 .mh-logo {
     margin: 0;
 }
@@ -30,6 +36,7 @@ html, body {
     margin: 0;
     padding: 0;
 }
+
 .logo-pic img {
     max-width: 100%;
     height: auto;
@@ -37,7 +44,7 @@ html, body {
 
 .container {
     max-width: 100%;
-    padding: 20px;
+    padding: 0;
     margin: 0 auto;
 }
 
@@ -127,4 +134,76 @@ header .banner {
 
 .main-button a:hover {
     text-decoration: underline;
+}
+
+/* section styling */
+
+.flex h1 {
+    text-align: center;
+    margin-top: 2em;
+}
+
+.col {
+    padding-bottom: 5px;
+    color: #424346;
+    background: #FFF;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, .1);
+}
+
+.col h2, .col p {
+    margin: 0;
+    padding: 0 ;
+}
+
+.col h2 {
+    margin: .75em 0 .5em;
+}
+
+.col p {
+     text-align: left;
+    font-size: 0.9em;
+}
+
+.butt {
+    padding: 8px 15px 6px;
+    font-size: .7em;
+    letter-spacing: 0.1em;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #FFF;
+    border-radius: 3px;
+    background: #9B9A9B;
+    transition: all .275s;
+}
+
+.flex .col img {
+    width: 100%;
+    height: auto;
+}
+
+.flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    max-width: 100%;
+    margin: 0;
+}
+
+.flex .col {
+    display: flex;
+    flex-direction: column;
+    flex: 0 1 300px;
+    margin: 1em 0.5em;
+}
+
+.flex .col .butt {
+    align-self: flex-start;
+    margin-top: auto;
+}
+
+@media (max-width: 900px) {
+    .flex {
+        flex-wrap: wrap;
+    }
 }
