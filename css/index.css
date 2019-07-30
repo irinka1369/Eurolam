@@ -12,12 +12,6 @@ html, body {
     font-weight: 300;
     line-height: 1.625em;
 }
-
-body {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
 /******Header*****/
 .container {
     max-width: 100%;
@@ -132,6 +126,47 @@ header .banner {
 }
 
 /* section styling */
+.flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+   max-width: 100%;
+    margin: 0;
+}
+@media (min-width: 320px) {
+    .flex {
+        display: grid;
+        grid-template-columns:1fr;
+        grid-gap: 3px;
+    }
+}
+@media (min-width: 500px ) {
+    .flex {
+
+        grid-template-columns: 1fr 1fr;
+
+    }
+}
+ @media (min-width: 660px) {
+    .flex {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+.flex .col img {
+    width: 100%;
+    height: auto;
+}
+.flex .col {
+    display: flex;
+    flex-direction: column;
+    flex: 0 1 300px;
+    margin: 1em 1em;
+}
+
+.flex .col .butt {
+    align-self: center;
+    margin-top: auto;
+}
 
 .flex h1 {
     text-align: center;
@@ -173,7 +208,7 @@ header .banner {
 
 .butt {
     padding: 8px 15px 6px;
-    margin:
+    margin:;
     font-size: .7em;
     letter-spacing: 0.1em;
     font-weight: bold;
@@ -185,26 +220,6 @@ header .banner {
     transition: all .275s;
 }
 
-.flex .col img {
-    width: 100%;
-    height: auto;
-}
-.flex {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
-    max-width: 100%;
-    margin: 0;
-}
 
-.flex .col {
-    display: flex;
-    flex-direction: column;
-    flex: 0 1 300px;
-    margin: 1em 1em;
-}
 
-.flex .col .butt {
-    align-self: center;
-    margin-top: auto;
+
