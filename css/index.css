@@ -177,12 +177,7 @@ header .banner {
     margin-top: 2em;
 }
 
-.novosti-h2 {
-    text-align: center;
-    margin: 5
-}
-
-.video-h2 {
+.novosti-h2, .contacts-h2,.video-h2  {
     text-align: center;
     margin: 5
 }
