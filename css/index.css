@@ -18,11 +18,25 @@ body {
     flex-direction: column;
     justify-content: center;
 }
-
+/******Header*****/
+.container {
+    max-width: 100%;
+    padding: 0;
+    margin: 0 auto;
+}
+.main-header .container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
 .mh-logo {
     margin: 0;
 }
-
+.logo-pic img {
+    max-width: 100%;
+    height: auto;
+}
 .main-nav a {
     font-size: 0.75em;
     font-weight: bold;
@@ -35,34 +49,10 @@ body {
 .main-nav a:hover {
 text-decoration: underline;
 }
-
-
-.main-nav ul {
-    margin: 0;
-    padding: 0;
-}
-
-.logo-pic img {
-    max-width: 100%;
-    height: auto;
-}
-
-.container {
-    max-width: 100%;
-    padding: 0;
-    margin: 0 auto;
-}
-
-.main-header .container {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
 .main-nav ul {
     margin: 1em 0 .5em;
     text-align: center;
+    padding: 0;
 }
 
 .main-nav li {
@@ -199,13 +189,11 @@ header .banner {
     width: 100%;
     height: auto;
 }
-
-.flex iframe {}
-
 .flex {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    flex-wrap: wrap;
     max-width: 100%;
     margin: 0;
 }
@@ -220,9 +208,3 @@ header .banner {
 .flex .col .butt {
     align-self: center;
     margin-top: auto;
-
-@media (max-width: 900px) {
-    .flex {
-        flex-wrap: wrap;
-    }
-}
