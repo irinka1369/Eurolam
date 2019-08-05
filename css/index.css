@@ -12,7 +12,7 @@ html, body {
     font-size: 14px;
     font-weight: 300;
     line-height: 1.625em;
-    background-color: #F8F7F7;
+    background-color: #FAFAFA;
 }
 
 /******Header*****/
@@ -22,6 +22,7 @@ html, body {
     padding: 0;
     margin: 0 auto;
     position: absolute;
+    border-bottom: 1px solid #A9ABAB;
 }
 
 .main-header {
@@ -49,14 +50,14 @@ html, body {
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 0.1em;
-    color: #5A5555;
+    color: #464545;
     text-decoration: none;
     opacity: 0.75;
     transition: opacity 0.1s linear;
 }
 
 .main-nav a:hover {
-    color: #302D2D;
+    color: #fff;
     opacity: 1;
 }
 
@@ -91,7 +92,7 @@ header form {
     background-color: #D5D4D4;
     opacity: 0.75;
     border: 2px solid #737070;
-    color: #141313;
+    color: #464545;
     width: 180px;
     padding: 6px 0px 6px 30px;
     border-radius: 20px;
@@ -113,6 +114,7 @@ header .banner {
     flex-direction: column;
     margin: 0;
     padding: 0;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
 
 .main-button {
@@ -175,6 +177,12 @@ header .banner {
 .flex .col img {
     width: 100%;
     height: auto;
+
+}
+.flex .col:hover,
+section.contact-form:hover
+{
+    transform: scale(1.1);
 }
 
 .flex .col {
@@ -214,13 +222,14 @@ h2.headinds {
     text-align: center;
     margin: 5px;
     color: #636363;
+
 }
 
 .col {
     padding-bottom: 5px;
     color: #424346;
     background: #FFF;
-    box-shadow: 0 1px 6px rgba(0, 0, 0, .1);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
 
 .col h2, .col p {
@@ -257,10 +266,11 @@ h2.headinds {
 section.contact-form {
     max-width: 500px;
     margin: 10px auto;
+
 }
 
 .feedback-input {
-    color: white;
+    color: #545353;
     font-family: "Lato", sans-serif;
     font-weight: 300;
     line-height: 1.625em;
@@ -318,6 +328,7 @@ textarea {
     align-items: center;
     justify-content: space-around;
     flex-wrap: wrap;
+    border-top: 1px solid #A9ABAB;
 }
 
 p.footer-copy {
@@ -344,6 +355,7 @@ p.footer-copy {
     opacity: 0.75;
     transition: opacity 0.1s linear;
     border: 1px solid transparent;
+     padding: .5em 1.5em;
 }
 
 .footer-nav a:hover {

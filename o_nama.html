@@ -6,36 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="shortcut icon" href="img/star.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/o_nama.css">
     <title>O Nama</title>
 </head>
 
 <body>
-    <header id="header_o_nama">
+    <header class="main-header">
         <div class="container">
-            <div id="logo_o_nama">
-                <a href="index.html"><img src="img/logo.png" alt="Eurolam Logo" /></a>
-            </div>
-            <div>
-                <nav id="nav-menu-container-o-nama">
-                    <ul class="nav-menu">
-                        <li><a href="index.html">Početna</a></li>
-                        <li><a href="#o_nama.html">O nama</a></li>
-                        <li><a href="http://www.eurolam.hr/eurolam-novi-katalog-l3" target="_blank">Katalog</a></li>
-                        <li><a href="#novosti">Novosti</a></li>
-                        <li><a href="kontakti.html">Kontakti</a></li>
-                    </ul>
-                </nav><!-- #nav-menu-container -->
-                <div class="search">
-                    <input type="text" placeholder="Što tražite?">
-                    <button type="button">&#9906;</button>
-                </div>
-
-            </div>
+            <h1 class="mh-logo">
+                <a href="index.html"><img class="logo-pic" src="img/logo.png" alt="Eurolam Logo" /></a>
+            </h1>
+            <nav class="main-nav">
+                <ul class="main-nav-list">
+                    <li><a href="index.html">Početna</a></li>
+                    <li><a href="o_nama.html">O nama</a></li>
+                    <li><a href="http://www.eurolam.hr/eurolam-novi-katalog-l3" target="_blank">Katalog</a></li>
+                    <li><a href="#novosti">Novosti</a></li>
+                    <li><a href="kontakti.html">Kontakti</a></li>
+                </ul>
+            </nav>
+            <form id="search">
+                <input type="text" placeholder="Što tražite?">
+            </form>
         </div>
+
     </header><!-- #header -->
 
     <section>
-        <div class="container" id="information">
+            <div class="flex">
+            <div class="col">
             <h1>O NAMA</h1>
             <p>
                 Tvrtka Eurolam osnovana je 20. prosinca 1993. godine. Sjedište tvrtke je u Rakitju (Zagreb), Voćarska
@@ -56,43 +55,32 @@
                 Jasno definirana strategija pokazala je uspješnost poslovanja tvrtke Eurolam. Provođenje poslovne
                 strategije u djelo jest ponuditi vrhunsku uslugu i kvalitetu, te potpunu podršku svim klijentima.
             </p>
-        </div>
-        <div id="company_photo" class="container">
             <img src="img/eurolam_building.jpg" alt="Zgrada od Eurolama">
-        </div>
-        <div id="location" class="container">
-            <iframe
+             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2782.1499082311066!2d15.817681115048323!3d45.788224379106104!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4765ce05095e9c59%3A0xf9308a3d5a497ef8!2sEurolam+d.o.o.!5e0!3m2!1sru!2sua!4v1563645745991!5m2!1sru!2sua"
-                width="600" height="450" style="border:0" allowfullscreen></iframe>
+                 style="border:0" allowfullscreen></iframe>
         </div>
+            </div>
     </section>
 
     <!-- start footer Area -->
-    <footer>
-        <div class="container">
-            <div>
-                <p>Copyright© 2019 Eurolam</p>
-            </div>
-            <div>
-                <nav>
-                    <ul class="nav-menu">
-                        <li><a href="index.html">Početna</a></li>
-                        <li><a href="o_nama.html">O nama</a></li>
-                        <li><a href="http://www.eurolam.hr/eurolam-novi-katalog-l3" target="_blank">Katalog</a></li>
-                        <li><a href="#novosti">Novosti</a></li>
-                        <li><a href="kontakti.html">Kontakti</a></li>
-                    </ul>
-                </nav>
-            </div>
-            <section id="social_icon_footer_o_nama">
-                <h3>Pronađi nas u</h3>
-                <div class="social-media">
-                    <a href="https://www.facebook.com"><img src="img/facebook.png"></a>
-                    <a href="https://twitter.com/?lang=hr"><img src="img/twitter.png"></a>
-                    <a href="https://www.google.com/intl/ru/gmail/about/"><img src="img/mail.png"></a>
-                </div>
-            </section>
-        </div>
+    <footer class="footer">
+        <p class="footer-copy">Copyright© 2019 Eurolam</p>
+
+        <nav class="footer-nav">
+            <a class="nav-link-footer" href="index.html">Početna</a>
+            <a class="nav-link-footer" href="o_nama.html">O nama</a>
+            <a class="nav-link-footer" href="http://www.eurolam.hr/eurolam-novi-katalog-l3" target="_blank">Katalog</a>
+            <a class="nav-link-footer" href="#novosti">Novosti</a>
+            <a class="nav-link-footer" href="kontakti.html">Kontakti</a>
+        </nav>
+
+        <nav class="social-bar">
+            <a href="https://www.facebook.com"><img src="img/facebook.png" alt="Photo za Facebook"></a>
+            <a href="https://twitter.com/?lang=hr"><img src="img/twitter.png" alt="Photo za Twitter"></a>
+            <a href="https://www.google.com/intl/ru/gmail/about/"><img src="img/gmail.png" alt="Photo za Gmail"></a>
+        </nav>
+
     </footer>
     <!-- End footer Area -->
 </body>
