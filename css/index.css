@@ -29,6 +29,7 @@ html, body {
     width: 100%;
     padding: 0;
     margin: 0 auto;
+
     border-bottom: 1px solid #A9ABAB;
 }
 
@@ -36,7 +37,7 @@ html, body {
     position: relative;
 }
 
-.main-header .container, .container_o_nama, .container_kontakti {
+.main-header .container, .container_o_nama, .container_kontakti{
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -153,7 +154,7 @@ header .banner {
 
 /* section styling */
 
-.flex, .flex_o_nama, .flex_kontakti {
+.flex , .flex_o_nama, .flex_kontakti {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -190,6 +191,7 @@ header .banner {
 .flex_o_nama .col_o_nama img {
     width: 100%;
     height: auto;
+
 }
 
 .flex .col:hover img {
@@ -200,7 +202,7 @@ header .banner {
     transform: scale(1.1);
 }
 
-.flex .col, .col_kontakti {
+.flex .col , .col_kontakti {
     display: flex;
     flex-direction: column;
     flex: 0 1 300px;
@@ -228,6 +230,7 @@ header .banner {
     color: #636363;
 }
 
+
 .h1_kontakti {
     text-align: center;
     margin-top: 2em;
@@ -247,10 +250,9 @@ header .banner {
     text-align: justify;
     font-size: 0.9em;
     padding: 0 5px;
-}
-
+    }
 .col_o_nama p {
-    font-weight: 500;
+     font-weight: 500;
 }
 
 .col_kontakti h2 {
@@ -263,20 +265,18 @@ header .banner {
     font-size: 0.9em;
     padding: 0 5px;
 }
-
 .maps {
-    overflow: hidden;
-    padding-bottom: 56.25%;
-    position: relative;
-    height: 0;
-}
-
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+    }
 .maps iframe {
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    position: absolute;
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
 }
 
 #video_prvi, #video_drugi, #video_treti {
@@ -374,10 +374,20 @@ textarea {
     font-weight: 300;
 }
 
+#feedback-input:last-child{
+    margin-bottom: 0;
+}
 [type="submit"]:hover {
     background: #CC4949;
 }
 
+.contact-form p {
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    font-weight: 100;
+    opacity: 0.8;
+    }
 /***** Footer ******/
 
 .social-bar img {
