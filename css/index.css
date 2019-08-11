@@ -25,11 +25,10 @@ html, body {
     border-bottom: 1px solid #A9ABAB;
 }
 
-.container_o_nama {
+.container_o_nama, .container_kontakti {
     width: 100%;
     padding: 0;
     margin: 0 auto;
-
     border-bottom: 1px solid #A9ABAB;
 }
 
@@ -37,7 +36,7 @@ html, body {
     position: relative;
 }
 
-.main-header .container, .container_o_nama{
+.main-header .container, .container_o_nama, .container_kontakti {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -154,7 +153,7 @@ header .banner {
 
 /* section styling */
 
-.flex , .flex_o_nama{
+.flex, .flex_o_nama, .flex_kontakti {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -163,7 +162,7 @@ header .banner {
 }
 
 @media (min-width: 200px) {
-    .flex, .flex_o_nama {
+    .flex, .flex_o_nama, .flex_kontakti {
         display: grid;
         grid-template-columns: 1fr;
         grid-gap: 3px;
@@ -171,7 +170,7 @@ header .banner {
 }
 
 @media (min-width: 500px) {
-    .flex {
+    .flex, .flex_kontakti {
         grid-template-columns: 1fr 1fr;
     }
 }
@@ -201,7 +200,7 @@ header .banner {
     transform: scale(1.1);
 }
 
-.flex .col {
+.flex .col, .col_kontakti {
     display: flex;
     flex-direction: column;
     flex: 0 1 300px;
@@ -228,6 +227,12 @@ header .banner {
     margin: 50px 5px 50px 5px;
     color: #636363;
 }
+
+.h1_kontakti {
+    text-align: center;
+    margin-top: 2em;
+}
+
 .col h2, .col p {
     margin: 0;
     padding: 0;
@@ -242,9 +247,36 @@ header .banner {
     text-align: justify;
     font-size: 0.9em;
     padding: 0 5px;
-    }
+}
+
 .col_o_nama p {
-     font-weight: 500;
+    font-weight: 500;
+}
+
+.col_kontakti h2 {
+    margin: .75em 0 .5em;
+    text-align: center;
+}
+
+.col_kontakti p {
+    text-align: center;
+    font-size: 0.9em;
+    padding: 0 5px;
+}
+
+.maps {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
+}
+
+.maps iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
 }
 
 #video_prvi, #video_drugi, #video_treti {
