@@ -6,13 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="shortcut icon" href="img/star.png" type="image/x-icon">
-    <link rel="stylesheet" href="css/o_nama.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <title>O Nama</title>
 </head>
 
 <body>
     <header class="main-header">
-        <div class="container">
+        <div class="container_o_nama">
             <h1 class="mh-logo">
                 <a href="index.html"><img class="logo-pic" src="img/logo.png" alt="Eurolam Logo" /></a>
             </h1>
@@ -31,36 +33,53 @@
         </div>
 
     </header><!-- #header -->
-
+    <div class="clock"></div>
     <section>
-            <div class="flex">
-            <div class="col">
-            <h1>O NAMA</h1>
-            <p>
-                Tvrtka Eurolam osnovana je 20. prosinca 1993. godine. Sjedište tvrtke je u Rakitju (Zagreb), Voćarska
-                6b, gdje se nalazi i skladišno prodajni prostor.
-                U Republici Hrvatskoj Eurolam se potvrdio kao tvrtka koja nudi visoko kvalitetne proizvode koji
-                zadovoljavaju najstrože standarde, kako funkcionalne, tako i estetske.
-                Tvrtka Eurolam jedan je od najjačih hrvatskih zastupnika eminentnih europskih i svjetskih brandova s
-                područja izrade namještaja i opremanja doma, te unutarnje stolarije (vrata, dovratnici, opšavne i
-                laminatne letvice).
-                "Hranipex", "Jowat", "Riepe", "GTV", "Sirca", “Kastamonu“, "Unionplast“, “Interceramic“, “Salice“,
-                "Kunex", "Lesna", "Classen" itd.
-                Otvoren je i dućan u prodajno skladišnom centru u Rakitju, gdje možete pronaći sve za proizvodnju
-                namještaja na jednom mjestu.
-                Osim trgovine pokrenuli smo vlastitu proizvodnju furnirane rubne trake, te uslugu širinskog i dužinskog
-                spajanja furnira. Proizvodnja je opremljena novim specijaliziranim strojevima kako bi artikli iz naše
-                proizvodnje zadovoljavali i najstrože standarde. Isto tako posjedujemo FSC® certifikat za furnir koji
-                koristimo u proizvodnji.
-                Jasno definirana strategija pokazala je uspješnost poslovanja tvrtke Eurolam. Provođenje poslovne
-                strategije u djelo jest ponuditi vrhunsku uslugu i kvalitetu, te potpunu podršku svim klijentima.
-            </p>
-            <img src="img/eurolam_building.jpg" alt="Zgrada od Eurolama">
-             <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2782.1499082311066!2d15.817681115048323!3d45.788224379106104!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4765ce05095e9c59%3A0xf9308a3d5a497ef8!2sEurolam+d.o.o.!5e0!3m2!1sru!2sua!4v1563645745991!5m2!1sru!2sua"
-                 style="border:0" allowfullscreen></iframe>
-        </div>
+        <div class="flex_o_nama">
+            <div class="col_o_nama">
+                <h1>O NAMA</h1>
+                <p>
+                    Tvrtka Eurolam osnovana je 20. prosinca 1993. godine. Sjedište tvrtke je u Rakitju (Zagreb),
+                    Voćarska
+                    6b, gdje se nalazi i skladišno prodajni prostor.
+                    U Republici Hrvatskoj Eurolam se potvrdio kao tvrtka koja nudi visoko kvalitetne proizvode koji
+                    zadovoljavaju najstrože standarde, kako funkcionalne, tako i estetske.
+                    Tvrtka Eurolam jedan je od najjačih hrvatskih zastupnika eminentnih europskih i svjetskih brandova s
+                    područja izrade namještaja i opremanja doma, te unutarnje stolarije (vrata, dovratnici, opšavne i
+                    laminatne letvice).
+                    "Hranipex", "Jowat", "Riepe", "GTV", "Sirca", “Kastamonu“, "Unionplast“, “Interceramic“, “Salice“,
+                    "Kunex", "Lesna", "Classen" itd.
+                    Otvoren je i dućan u prodajno skladišnom centru u Rakitju, gdje možete pronaći sve za proizvodnju
+                    namještaja na jednom mjestu.
+                    Osim trgovine pokrenuli smo vlastitu proizvodnju furnirane rubne trake, te uslugu širinskog i
+                    dužinskog
+                    spajanja furnira. Proizvodnja je opremljena novim specijaliziranim strojevima kako bi artikli iz
+                    naše
+                    proizvodnje zadovoljavali i najstrože standarde. Isto tako posjedujemo FSC® certifikat za furnir
+                    koji
+                    koristimo u proizvodnji.
+                    Jasno definirana strategija pokazala je uspješnost poslovanja tvrtke Eurolam. Provođenje poslovne
+                    strategije u djelo jest ponuditi vrhunsku uslugu i kvalitetu, te potpunu podršku svim klijentima.
+                </p>
+                <img src="img/eurolam_building.jpg" alt="Zgrada od Eurolama">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2782.1499082311066!2d15.817681115048323!3d45.788224379106104!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4765ce05095e9c59%3A0xf9308a3d5a497ef8!2sEurolam+d.o.o.!5e0!3m2!1sru!2sua!4v1563645745991!5m2!1sru!2sua"
+                    style="border:0" allowfullscreen></iframe>
             </div>
+        </div>
+
+    </section>
+
+    <section class="weather">
+        <h1>Get Weather</h1>
+        <label>
+            City: <input type="text" name="city">
+        </label>
+        <br>
+        <label>
+            Temp: <input type="text" name="temp" readonly>
+        </label>
+        <button class="get-temp">Get Temp</button>
     </section>
 
     <!-- start footer Area -->
@@ -83,6 +102,7 @@
 
     </footer>
     <!-- End footer Area -->
+    <script src="js/index.js"></script>
 </body>
 
 </html>
