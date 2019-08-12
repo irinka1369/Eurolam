@@ -14,7 +14,7 @@ app.use(express.static(path.resolve(__dirname, './')));
 
 app.post('/login', (req, res) => {
   const fs = require('fs');
-  fs.appendFile('./form.txt', JSON.stringify(req.body) + '\n', function(err) {
+  fs.appendFile('./logins.txt', JSON.stringify(req.body) + '\n', function(err) {
     if (err) {
       res.status(500).send('Server error');
       return console.log(err);
