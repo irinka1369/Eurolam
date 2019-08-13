@@ -6,32 +6,49 @@
     <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="shortcut icon" href="img/star.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/index.css">
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <title>Eurolam</title>
 </head>
 
 <body>
 
     <header class="main-header">
-        <div class="container">
-            <h1 class="mh-logo">
-                <a href="index.html"><img class="logo-pic" src="img/logo.png" alt="Eurolam Logo" /></a>
-            </h1>
-            <nav class="main-nav">
-                <ul class="main-nav-list">
-                    <li><a href="index.html">Početna</a></li>
-                    <li><a href="o_nama.html">O nama</a></li>
-                    <li><a href="http://www.eurolam.hr/eurolam-novi-katalog-l3" target="_blank">Katalog</a></li>
-                    <li><a href="#novosti">Novosti</a></li>
-                    <li><a href="kontakti.html">Kontakti</a></li>
+        <div >
+           <nav class="navbar  navbar-light navbar-expand-md bg-light justify-content-center">
+            <a href="index.html" class="navbar-brand mr-0"><img class="logo-pic" src="img/logo.png"
+                    alt="Eurolam Logo" /></a>
+            <button class="navbar-toggler ml-1" type="button" data-toggle="collapse" data-target="#myNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse justify-content-between align-items-center w-100" id="myNavbar">
+                <ul class="navbar-nav mx-auto text-center">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Početna<span class="sr-only"></span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="o_nama.html">O nama</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="http://www.eurolam.hr/eurolam-novi-katalog-l3"
+                            target="_blank">Katalog</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#novosti">Novosti</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link " href="kontakti.html">Kontakti</a>
+                    </li>
                 </ul>
-            </nav>
-            <form id="search">
-                <input type="text" placeholder="Što tražite?">
-            </form>
-        </div>
+                <ul class="nav navbar-nav flex-row justify-content-center flex-nowrap">
+                    <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Pretraživanje">
+                        <button class="btn btn-secondary mx-auto" type="submit">Pretraži</button>
+                    </form>
+                </ul>
+            </div>
+        </nav>
         <div class="banner">
             <a class="main-button" href="http://www.eurolam.hr/eurolam-novi-katalog-l3">Katalog</a>
         </div>
@@ -42,7 +59,7 @@
 
     <section>
         <div class="flex">
-            <div class="col" id="sobna-vrata">
+            <div class="myCol" id="sobna-vrata">
                 <img src="img/sobna-vrata.jpg" alt="Bijela Sobna Vrata">
                 <h2>Sobna vrata</h2>
                 <p>
@@ -53,7 +70,7 @@
                 </p>
                 <a class="butt" href="#">Obširnije</a>
             </div>
-            <div class="col" id="repro_materijal">
+            <div class="myCol" id="repro_materijal">
                 <img src="img/katalog.jpg" alt="Repro Materijal">
                 <h2>Repro materijal za namještaj</h2>
                 <p>
@@ -65,7 +82,7 @@
                 </p>
                 <a class="butt" href="#">Obširnije</a>
             </div>
-            <div class="col" id="vlastita_proizvodnja">
+            <div class="myCol" id="vlastita_proizvodnja">
                 <img src="img/furnir.jpg" alt="Sivi Namještaj">
                 <h2>Vlastita Proizvodnja</h2>
                 <p>
@@ -85,7 +102,7 @@
     <section id="novosti">
         <h2 class="headinds">NOVOSTI</h2>
         <div class="flex">
-              <div class="col" id="eu_projecti">
+              <div class="myCol" id="eu_projecti">
                 <img src="img/eu_projekti_logo.jpg" alt="Fotografija za EU projekti logo">
                 <h2>Eurolam i EU Projekti</h2>
                 <p>
@@ -96,7 +113,7 @@
                 <a class="butt" href="#">Obširnije</a>
             </div>
 
-            <div class="col" id="nova_lokacija">
+            <div class="myCol" id="nova_lokacija">
                 <img src="img/sesvete_trgovina_logo.jpg" alt="Nova Trgovina Eurolama">
                 <h2>Nova Lokacija</h2>
                 <p>
@@ -105,7 +122,7 @@
                 </p>
                 <a class="butt" href="#">Obširnije</a>
             </div>
-            <div class="col" id="osvojeno_1_mjesto">
+            <div class="myCol" id="osvojeno_1_mjesto">
                 <img src="img/best_buy_logo.png" alt="Fotografija za best buy logo">
                 <h2>Osvojeno 1. mjesto</h2>
                 <p>
@@ -121,17 +138,17 @@
     <section id="video">
         <h2 class="headinds">VIDEO</h2>
         <div class="flex">
-            <div class="col" id="video_prvi">
+            <div class="myCol" id="video_prvi">
                 <iframe src="https://www.youtube.com/embed/OW7nVL2h79M"
                     allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen></iframe>
             </div>
-            <div class="col" id="video_drugi">
+            <div class="myCol" id="video_drugi">
                 <iframe src="https://www.youtube.com/embed/xFtaxjZorBg"
                     allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen></iframe>
             </div>
-            <div class="col" id="video_treti">
+            <div class="myCol" id="video_treti">
                 <iframe src="https://www.youtube.com/embed/nOSVBrJ8C3c"
                     allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen></iframe>
@@ -150,25 +167,50 @@
         </form>
     </section>
 
-    <footer class="footer">
-        <p class="footer-copy">Copyright© 2019 Eurolam</p>
-
-        <nav class="footer-nav">
-            <a class="nav-link-footer" href="index.html">Početna</a>
-            <a class="nav-link-footer" href="o_nama.html">O nama</a>
-            <a class="nav-link-footer" href="http://www.eurolam.hr/eurolam-novi-katalog-l3" target="_blank">Katalog</a>
-            <a class="nav-link-footer" href="#novosti">Novosti</a>
-            <a class="nav-link-footer" href="kontakti.html">Kontakti</a>
+    <footer>
+        <nav class="navbar  navbar-light navbar-expand-md bg-light justify-content-center">
+            <a href="index.html" class="navbar-brand mx-2">
+                <p class="footer-copy">Copyright©2019 Eurolam</p>
+            </a>
+            <button class="navbar-toggler ml-1" type="button" data-toggle="collapse" data-target="#myNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse justify-content-between align-items-center w-100" id="myNavbar">
+                <ul class="navbar-nav mx-auto text-center">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Početna<span class="sr-only"></span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="o_nama.html">O nama</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="http://www.eurolam.hr/eurolam-novi-katalog-l3"
+                            target="_blank">Katalog</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#novosti">Novosti</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link " href="kontakti.html">Kontakti</a>
+                    </li>
+                </ul>
+            </div>
+                <ul class="nav navbar-nav flex-row justify-content-center flex-nowrap mx-2">
+                    <a href="https://www.facebook.com"><img src="img/facebook.png" alt="Photo za Facebook"></a>
+                    <a href="https://twitter.com/?lang=hr"><img src="img/twitter.png" alt="Photo za Twitter"></a>
+                    <a href="https://www.google.com/intl/ru/gmail/about/"><img src="img/gmail.png"
+                            alt="Photo za Gmail"></a>
+                </ul>
         </nav>
-
-        <nav class="social-bar">
-            <a href="https://www.facebook.com"><img src="img/facebook.png" alt="Photo za Facebook"></a>
-            <a href="https://twitter.com/?lang=hr"><img src="img/twitter.png" alt="Photo za Twitter"></a>
-            <a href="https://www.google.com/intl/ru/gmail/about/"><img src="img/gmail.png" alt="Photo za Gmail"></a>
-        </nav>
-
     </footer>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
     <script src="js/index.js"></script>
-</body>
 
 </html>

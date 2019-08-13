@@ -6,34 +6,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="shortcut icon" href="img/star.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/index.css">
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
     <title>O Nama</title>
 </head>
 
 <body>
-    <header class="main-header">
-        <div class="container_o_nama">
-            <h1 class="mh-logo">
-                <a href="index.html"><img class="logo-pic" src="img/logo.png" alt="Eurolam Logo" /></a>
-            </h1>
-            <nav class="main-nav">
-                <ul class="main-nav-list">
-                    <li><a href="index.html">Početna</a></li>
-                    <li><a href="o_nama.html">O nama</a></li>
-                    <li><a href="http://www.eurolam.hr/eurolam-novi-katalog-l3" target="_blank">Katalog</a></li>
-                    <li><a href="#novosti">Novosti</a></li>
-                    <li><a href="kontakti.html">Kontakti</a></li>
+    <header>
+        <nav class="navbar  navbar-light navbar-expand-md bg-light justify-content-center">
+            <a href="index.html" class="navbar-brand mr-0"><img class="logo-pic" src="img/logo.png"
+                    alt="Eurolam Logo" /></a>
+            <button class="navbar-toggler ml-1" type="button" data-toggle="collapse" data-target="#myNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse justify-content-between align-items-center w-100" id="myNavbar">
+                <ul class="navbar-nav mx-auto text-center">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Početna<span class="sr-only"></span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="o_nama.html">O nama</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="http://www.eurolam.hr/eurolam-novi-katalog-l3"
+                            target="_blank">Katalog</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#novosti">Novosti</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link " href="kontakti.html">Kontakti</a>
+                    </li>
                 </ul>
-            </nav>
-            <form id="search">
-                <input type="text" placeholder="Što tražite?">
-            </form>
-        </div>
-
+                <ul class="nav navbar-nav flex-row justify-content-center flex-nowrap">
+                    <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Pretraživanje">
+                        <button class="btn btn-secondary mx-auto" type="submit">Pretraži</button>
+                    </form>
+                </ul>
+            </div>
+        </nav>
     </header><!-- #header -->
-    <div class="clock"></div>
+
+
+    <span class="clock"></span><span class="todayData"></span>
+
     <section>
         <div class="flex_o_nama">
             <div class="col_o_nama">
@@ -61,47 +80,78 @@
                     Jasno definirana strategija pokazala je uspješnost poslovanja tvrtke Eurolam. Provođenje poslovne
                     strategije u djelo jest ponuditi vrhunsku uslugu i kvalitetu, te potpunu podršku svim klijentima.
                 </p>
-                <img src="img/eurolam_building.jpg" alt="Zgrada od Eurolama">
+
+                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="img/carousel-1.jpg" class="d-block w-100" alt="Sobna Vrata Hrast">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/carousel-2.jpg" class="d-block w-100" alt="Sobna Vrata Borovina">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/carousel-3.jpg" class="d-block w-100" alt="Sobna Vrata Bijela">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/carousel-4.jpg" class="d-block w-100" alt="Sobna Vrata Venge">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/carousel-5.jpg" class="d-block w-100" alt="Sobna Vrata Bijela sa staklom">
+                        </div>
+                    </div>
+                </div>
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2782.1499082311066!2d15.817681115048323!3d45.788224379106104!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4765ce05095e9c59%3A0xf9308a3d5a497ef8!2sEurolam+d.o.o.!5e0!3m2!1sru!2sua!4v1563645745991!5m2!1sru!2sua"
                     style="border:0" allowfullscreen></iframe>
             </div>
         </div>
-
-    </section>
-
-    <section class="weather">
-        <h2>Get Weather</h2>
-        <label>
-            City: <input type="text" name="city">
-        </label>
-        <br>
-        <label>
-            Temp: <input type="text" name="temp" readonly>
-        </label>
-        <button class="get-temp">Get Temp</button>
     </section>
 
     <!-- start footer Area -->
-    <footer class="footer">
-        <p class="footer-copy">Copyright© 2019 Eurolam</p>
-
-        <nav class="footer-nav">
-            <a class="nav-link-footer" href="index.html">Početna</a>
-            <a class="nav-link-footer" href="o_nama.html">O nama</a>
-            <a class="nav-link-footer" href="http://www.eurolam.hr/eurolam-novi-katalog-l3" target="_blank">Katalog</a>
-            <a class="nav-link-footer" href="#novosti">Novosti</a>
-            <a class="nav-link-footer" href="kontakti.html">Kontakti</a>
+    <footer>
+        <nav class="navbar  navbar-light navbar-expand-md bg-light justify-content-center">
+            <a href="index.html" class="navbar-brand mx-2">
+                <p class="footer-copy">Copyright©2019 Eurolam</p>
+            </a>
+            <button class="navbar-toggler ml-1" type="button" data-toggle="collapse" data-target="#myNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse justify-content-between align-items-center w-100" id="myNavbar">
+                <ul class="navbar-nav mx-auto text-center">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Početna<span class="sr-only"></span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="o_nama.html">O nama</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="http://www.eurolam.hr/eurolam-novi-katalog-l3"
+                            target="_blank">Katalog</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#novosti">Novosti</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link " href="kontakti.html">Kontakti</a>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav flex-row justify-content-center flex-nowrap mx-2">
+                    <a href="https://www.facebook.com"><img src="img/facebook.png" alt="Photo za Facebook"></a>
+                    <a href="https://twitter.com/?lang=hr"><img src="img/twitter.png" alt="Photo za Twitter"></a>
+                    <a href="https://www.google.com/intl/ru/gmail/about/"><img src="img/gmail.png"
+                            alt="Photo za Gmail"></a>
+                </ul>
         </nav>
-
-        <nav class="social-bar">
-            <a href="https://www.facebook.com"><img src="img/facebook.png" alt="Photo za Facebook"></a>
-            <a href="https://twitter.com/?lang=hr"><img src="img/twitter.png" alt="Photo za Twitter"></a>
-            <a href="https://www.google.com/intl/ru/gmail/about/"><img src="img/gmail.png" alt="Photo za Gmail"></a>
-        </nav>
-
     </footer>
     <!-- End footer Area -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
     <script src="js/index.js"></script>
 </body>
 
