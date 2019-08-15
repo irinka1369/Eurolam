@@ -1,22 +1,7 @@
-// CLOCK
-
-setInterval( ()=> $('.clock').html((new Date()).toLocaleTimeString()), 1000 );
-
-$(document).ready( () => {
-
-  $('#textarea').on('keyup', event => {
-    const post = $(event.currentTarget).val();
-    const remaining = 500 - post.length;
-    $('.characters').html(remaining);
-  });
-
-  $('#textarea').focus();
-
- });
 
 //відправка даних з форми за допомогою AJAX
 
-document.querySelector("#contact-submit").addEventListener("click", login);
+document.querySelector(".contact-submit").addEventListener("click", login);
 
 function login(e) {
   e.preventDefault();
@@ -24,14 +9,11 @@ function login(e) {
     method: "POST",
     headers: {
       "Content-Type": "application/json"
-      // 'Content-Type': 'application/x-www-form-urlencoded',
-    },
+          },
     body: JSON.stringify({
       ime: document.querySelector("#userName").value,
       email: document.querySelector("#userEmail").value,
       poruka: document.querySelector("#textarea").value
     })
   }).then(_ => document.querySelector(".feedback-form").reset());
-}
-
-
+};

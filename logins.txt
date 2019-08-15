@@ -1,1 +1,5 @@
 {"ime":"Iryna","email":"myeams@ukr.net","poruka":"Dobar dan"}
+{"ime":"Lila","email":"test@ukr.net","poruka":"Hvala vam"}
+{"ime":"","email":"","poruka":""}
+{"ime":"Kira","email":"mua@gmail.com","poruka":"Dobar dan"}
+{"ime":"Andriy","email":"my@email.com","poruka":"Hvala "}
