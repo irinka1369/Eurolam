@@ -14,9 +14,8 @@
 
 <body>
 
-    <header class="main-header">
-        <div >
-           <nav class="navbar  navbar-light navbar-expand-md bg-light justify-content-center">
+    <header >
+       <nav class="navbar  navbar-light navbar-expand-md bg-light justify-content-center">
             <a href="index.html" class="navbar-brand mr-0"><img class="logo-pic" src="img/logo.png"
                     alt="Eurolam Logo" /></a>
             <button class="navbar-toggler ml-1" type="button" data-toggle="collapse" data-target="#myNavbar">
@@ -42,10 +41,10 @@
                     </li>
                 </ul>
                 <ul class="nav navbar-nav flex-row justify-content-center flex-nowrap">
-                    <form class="form-inline my-2 my-lg-0">
+                   <li> <form class="form-inline my-2 my-lg-0">
                         <input class="form-control mr-sm-2" type="search" placeholder="Pretraživanje">
                         <button class="btn btn-secondary mx-auto" type="submit">Pretraži</button>
-                    </form>
+                    </form></li>
                 </ul>
             </div>
         </nav>
@@ -158,7 +157,7 @@
 
     <section class="contact-form" id="myForm">
         <h2 class="headinds">KONTAKTIRAJTE NAS</h2>
-         <form class="feedback-form" action="" method="POST" name="contact">
+         <form class="feedback-form"  method="POST" name="contact">
             <input class="feedback-input" id="userName" type="text" name="tvoje_ime" placeholder="Tvoje Ime" required>
             <input class="feedback-input" id="userEmail" type="email" name="email" placeholder="Email Address" required>
             <textarea class="feedback-input" id="textarea" name="tvoja_poruka" placeholder="Tvoja Poruka" required></textarea>
@@ -172,10 +171,10 @@
             <a href="index.html" class="navbar-brand mx-2">
                 <p class="footer-copy">Copyright©2019 Eurolam</p>
             </a>
-            <button class="navbar-toggler ml-1" type="button" data-toggle="collapse" data-target="#myNavbar">
+            <button class="navbar-toggler ml-1" type="button" data-toggle="collapse" data-target="#myFooterNavbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="navbar-collapse collapse justify-content-between align-items-center w-100" id="myNavbar">
+            <div class="navbar-collapse collapse justify-content-between align-items-center w-100" id="myFooterNavbar">
                 <ul class="navbar-nav mx-auto text-center">
                     <li class="nav-item active">
                         <a class="nav-link" href="index.html">Početna<span class="sr-only"></span></a>
@@ -196,10 +195,10 @@
                 </ul>
             </div>
                 <ul class="nav navbar-nav flex-row justify-content-center flex-nowrap mx-2">
-                    <a href="https://www.facebook.com"><img src="img/facebook.png" alt="Photo za Facebook"></a>
-                    <a href="https://twitter.com/?lang=hr"><img src="img/twitter.png" alt="Photo za Twitter"></a>
-                    <a href="https://www.google.com/intl/ru/gmail/about/"><img src="img/gmail.png"
-                            alt="Photo za Gmail"></a>
+                    <li class="nav-item active"> <a href="https://www.facebook.com"><img src="img/facebook.png" alt="Photo za Facebook"></a></li>
+                    <li class="nav-item active"> <a href="https://twitter.com/?lang=hr"><img src="img/twitter.png" alt="Photo za Twitter"></a></li>
+                     <li class="nav-item active"><a href="https://www.google.com/intl/ru/gmail/about/"><img src="img/gmail.png"
+                            alt="Photo za Gmail"></a></li>
                 </ul>
         </nav>
     </footer>
@@ -212,5 +211,6 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
     <script src="js/index.js"></script>
+        </body>
 
 </html>

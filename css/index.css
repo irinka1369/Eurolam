@@ -24,17 +24,6 @@ html, body {
     position: absolute;
     border-bottom: 1px solid #A9ABAB;
 }
-.main-header {
-    position: relative;
-}
-
-.main-header .navigation, {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
 .mh-logo {
     margin: 0;
 }
@@ -42,63 +31,6 @@ html, body {
 .logo-pic img {
     width: 100%;
     height: auto;
-}
-
-.main-nav a {
-    font-size: 0.75em;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    color: #464545;
-    text-decoration: none;
-    opacity: 0.75;
-    transition: opacity 0.1s linear;
-}
-
-.main-nav a:hover {
-    color: #fff;
-    opacity: 1;
-}
-
-.main-nav ul {
-    margin: 0;
-    text-align: center;
-    padding: 0;
-}
-
-.main-nav li {
-    display: inline;
-}
-
-.main-nav a {
-    display: inline-block;
-    padding: .5em 1.5em;
-}
-
-@media (min-width:960px) {
-    .main-header .container {
-        justify-content: space-between;
-    }
-}
-
-header form {
-    width: auto;
-    float: right;
-}
-
-#search input[type="text"] {
-    background: url(../img/search-dark.png) no-repeat 10px 6px;
-    background-color: #D5D4D4;
-    opacity: 0.75;
-    border: 2px solid #737070;
-    color: #464545;
-    width: 180px;
-    padding: 6px 0px 6px 30px;
-    border-radius: 20px;
-}
-
-#search input[type="text"]:focus {
-    width: 250px;
 }
 
 header .banner {
